@@ -1,0 +1,22 @@
+# Работа с базой данных
+
+## Создание базы данных
+
+```postgresql
+CREATE DATABASE retail_location_predictor;
+\c retail_location_predictor
+CREATE EXTENSION postgis;
+CREATE EXTENSION hstore;
+```
+
+### Импорт данных с OSM
+
+```shell
+osm2pgsql \
+  --create \
+  --database retail_location_predictor \
+  --slim \
+  --hstore \
+  --multi-geometry \
+  /path/to/osm_import/osm.pbf
+```
