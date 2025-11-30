@@ -2,7 +2,7 @@
 
 ## Создание базы данных
 
-```postgresql
+```sql
 CREATE DATABASE retail_location_predictor;
 \c retail_location_predictor
 CREATE EXTENSION postgis;
@@ -11,7 +11,7 @@ CREATE EXTENSION hstore;
 
 ### Импорт данных с OSM
 
-```shell
+```bash
 osm2pgsql \
   --create \
   --database retail_location_predictor \
