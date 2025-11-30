@@ -1,2 +1,7 @@
 .obsidian/
 .idea/
+
+_pycache__/
+*.pyc
+.env
+.venv/

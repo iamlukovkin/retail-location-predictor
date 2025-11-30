@@ -1,0 +1,28 @@
+[project]
+name = "retail-location-predictor"
+version = "0.1.0"
+description = "An ML project to develop neural network models for assessing the optimal location of retail outlets"
+authors = [
+    { name = "Ivan Lukovkin" }
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "kagglehub",
+    "pandas-stubs"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+packages = [
+    { include = "retail_location_predictor", from = "src" }
+]
